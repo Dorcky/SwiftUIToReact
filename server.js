@@ -35,7 +35,7 @@ app.post('/convert', async (req, res) => {
   try {
     // Préparation de la demande au modèle Gemini
     const prompt = `Convertissez uniquement ce code SwiftUI en pur code ${
-      target === 'react-native' ? 'React Native' : 'HTML/CSS/Bootstrap'
+      target === 'react' ? 'React' : 'HTML/CSS/Bootstrap'
     } sans autre texte généré par l'IA. Assurez-vous que toutes les interactions avec les services web ou API présents dans le code original soient conservées et opérationnelles :\n\n${code}`;
 
 
